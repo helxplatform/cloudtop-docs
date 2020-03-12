@@ -1,0 +1,125 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>Usage &#8212; CloudTop 0.1 documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Goals" href="Goals.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="usage">
+<h1>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h1>
+<p>CloudTop is provided only as a docker image.  The images are stored in dockerhub (<a class="reference external" href="https://hub.docker.com/">https://hub.docker.com/</a>) and are downloaded with the normal mechanisms in docker run, docker-compose and kubernetes.</p>
+<p><em>Tags</em></p>
+<ul class="simple">
+<li><p>heliumdatastage/cloudtop:ohif  This docker file includes both the CloudTop and the Google Health enabled version of the OHIF dicom viewer.</p></li>
+</ul>
+<p><em>Ports</em></p>
+<ul class="simple">
+<li><p>8080 This is the native port for the web connection to CloudTop</p></li>
+<li><p>3000 (OHIF version only) This is the port for the OHIF web application</p></li>
+</ul>
+<p><em>Environment Variables</em></p>
+<ul class="simple">
+<li><p>USER_NAME The name to use to log in to the CloudTop instance. This user is created in the running docker image.</p></li>
+<li><p>USER_HOME The home directory for the created user.  CloudTop is running a Linux variant so this should be set to /home/USER_NAME.</p></li>
+<li><p>VNC_PW The password to use to log in to the CloudTop instance.</p></li>
+<li><p>CLIENT_ID (OHIF version only) The Google API Client Identifier token created using the Google tools.</p></li>
+</ul>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">CloudTop</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="CloudTop.html">CloudTop</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Goals.html">Goals</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Usage</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="Goals.html" title="previous chapter">Goals</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, Howard Lander.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.4.4</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/Usage.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
