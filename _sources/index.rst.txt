@@ -13,3 +13,5 @@ CloudTop
    CloudTop
    Goals
    Usage
+   Architecture
+   Examples
