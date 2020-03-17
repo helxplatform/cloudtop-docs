@@ -5,12 +5,13 @@ CloudTop is provided only as a docker image.  The images are stored in dockerhub
 
 *Tags*
 
-* heliumdatastage/cloudtop:ohif  This docker file includes both the CloudTop and the Google Health enabled version of the OHIF dicom viewer.
+* heliumdatastage/cloudtop:latest  This docker file includes just the CloudTop.
+* heliumdatastage/cloudtop-ohif:latest  This docker file includes both the CloudTop and the Google Health enabled version of the OHIF dicom viewer.
 
 *Ports*
 
-* 8080 This is the native port for the web connection to CloudTop
-* 3000 (OHIF version only) This is the port for the OHIF web application
+* 8080 This is the native port for the web connection to CloudTop.
+* 3000 (OHIF version only) This is the port for the OHIF web application.
 
 *Environment Variables*
 

@@ -35,6 +35,7 @@
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Architecture" href="Architecture.html" />
     <link rel="prev" title="Goals" href="Goals.html" /> 
 </head>
 
@@ -84,6 +85,8 @@
 <li class="toctree-l1"><a class="reference internal" href="CloudTop.html">CloudTop</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Goals.html">Goals</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Architecture.html">Architecture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Examples.html">Examples</a></li>
 </ul>
 
             
@@ -153,12 +156,13 @@
 <p>CloudTop is provided only as a docker image.  The images are stored in dockerhub (<a class="reference external" href="https://hub.docker.com/">https://hub.docker.com/</a>) and are downloaded with the normal mechanisms in docker run, docker-compose and kubernetes.</p>
 <p><em>Tags</em></p>
 <ul class="simple">
-<li><p>heliumdatastage/cloudtop:ohif  This docker file includes both the CloudTop and the Google Health enabled version of the OHIF dicom viewer.</p></li>
+<li><p>heliumdatastage/cloudtop:latest  This docker file includes just the CloudTop.</p></li>
+<li><p>heliumdatastage/cloudtop-ohif:latest  This docker file includes both the CloudTop and the Google Health enabled version of the OHIF dicom viewer.</p></li>
 </ul>
 <p><em>Ports</em></p>
 <ul class="simple">
-<li><p>8080 This is the native port for the web connection to CloudTop</p></li>
-<li><p>3000 (OHIF version only) This is the port for the OHIF web application</p></li>
+<li><p>8080 This is the native port for the web connection to CloudTop.</p></li>
+<li><p>3000 (OHIF version only) This is the port for the OHIF web application.</p></li>
 </ul>
 <p><em>Environment Variables</em></p>
 <ul class="simple">
@@ -176,6 +180,8 @@
           <footer>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="Architecture.html" class="btn btn-neutral float-right" title="Architecture" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="Goals.html" class="btn btn-neutral float-left" title="Goals" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
