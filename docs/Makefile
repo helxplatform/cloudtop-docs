@@ -6,7 +6,8 @@
 SPHINXOPTS    ?=
 SPHINXBUILD   ?= sphinx-build
 SOURCEDIR     = source
-BUILDDIR      = ../../docs-build
+BUILDDIR      = /Users/howard1/repos/cloudtop-docs/docs-build
+#BUILDDIR      = ../docs-build
 PDFBUILDDIR   = /tmp
 PDF           = ../manual.pdf
 # Put it first so that "make" without argument is like "make help".
