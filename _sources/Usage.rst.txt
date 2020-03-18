@@ -16,7 +16,6 @@ CloudTop is provided only as a docker image.  The images are stored in dockerhub
 *Environment Variables*
 
 * USER_NAME The name to use to log in to the CloudTop instance. This user is created in the running docker image.
-* USER_HOME The home directory for the created user.  CloudTop is running a Linux variant so this should be set to /home/USER_NAME.
 * VNC_PW The password to use to log in to the CloudTop instance.
 * CLIENT_ID (OHIF version only) The Google API Client Identifier token created using the Google tools.
 
