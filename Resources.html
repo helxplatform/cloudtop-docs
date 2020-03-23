@@ -178,7 +178,7 @@
 <li><p>System initialization: Needed processes, for example the nginx web server or tomcat servlet container can be started at the time the docker container is initialized.  The S6 system will monitor these processes and restart them as needed.</p></li>
 <li><p>User/desktop customization: The initialization scripts can also execute shell scripts for user customization. For example, the cloudtop-imagej-napari script copies several desktop launcher files into the Desktop directory of the user. This is needed because, for security reasons, the user account is created as part of the container initialization.</p></li>
 </ul>
-<p>The cloudtop-ohif and cloudtop-imagej-napari repos and docker files are good examples of how to extend the CloudTop base image using these S6 capabilities. For documentaion on the S6 system see:</p>
+<p>The cloudtop-ohif and cloudtop-imagej-napari repos and docker files are good examples of how to extend the CloudTop base image using these S6 capabilities. For documentation on the S6 system see:</p>
 <p><a class="reference external" href="https://skarnet.org/software/s6/">https://skarnet.org/software/s6/</a></p>
 </div>
 
