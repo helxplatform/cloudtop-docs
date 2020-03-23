@@ -15,3 +15,4 @@ CloudTop
    Usage
    Architecture
    Examples
+   Resources
