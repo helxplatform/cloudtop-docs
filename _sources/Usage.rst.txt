@@ -7,6 +7,7 @@ CloudTop is provided only as a docker image.  The images are stored in dockerhub
 
 * heliumdatastage/cloudtop:latest  This docker file includes just the CloudTop.
 * heliumdatastage/cloudtop-ohif:latest  This docker file includes both the CloudTop and the Google Health enabled version of the OHIF dicom viewer.
+* heliumdatastage/cloudtop-imagej-napari:latest  This docker file includes CloudTop,ImageJ and Napari.
 
 *Ports*
 
